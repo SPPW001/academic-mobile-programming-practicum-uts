@@ -1,4 +1,4 @@
-# TaniAir - UTS Mobile Programming
+# TaniAir - UTS Mobile Programming Practicum
 
 **Nama:** Setyo Pratama Putra Wibowo  
 **NIM:** 240605110090  
