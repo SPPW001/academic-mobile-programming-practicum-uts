@@ -1,17 +1,54 @@
-# taniair
+# TaniAir - UTS Mobile Programming
 
-A new Flutter project.
+**Nama:** Setyo Pratama Putra Wibowo  
+**NIM:** 240605110090  
+**Kelas:** Mobile Programming Practicum H
 
-## Getting Started
+## Deskripsi
 
-This project is a starting point for a Flutter application.
+TaniAir adalah aplikasi mobile berbasis **Flutter dan Dart** yang dikembangkan untuk membantu pengguna, khususnya petani atau pengelola lahan, dalam memahami kondisi lingkungan lahan dan mempertimbangkan kebutuhan penyiraman tanaman.
 
-A few resources to get you started if this is your first Flutter project:
+Aplikasi memanfaatkan data dinamis dari **Open-Meteo API**. Pengguna cukup mencari nama lokasi lahan, kemudian aplikasi akan memperoleh koordinat secara otomatis melalui Geocoding API dan mengambil data cuaca melalui Forecast API.
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+Data seperti estimasi kelembapan tanah, suhu, peluang hujan, curah hujan, dan ET₀ kemudian diolah menjadi informasi yang lebih mudah dipahami dalam bentuk rekomendasi seperti **Siram, Pantau, atau Tunda Penyiraman**.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Fitur Utama
+
+- Pencarian lokasi lahan berdasarkan nama daerah.
+- Pengambilan data dinamis dari Open-Meteo API.
+- Informasi estimasi kelembapan tanah.
+- Informasi suhu dan kelembapan udara.
+- Informasi peluang dan prakiraan hujan.
+- Pengolahan data menjadi rekomendasi penyiraman.
+- Prakiraan kondisi beberapa jam ke depan.
+- Tampilan rincian data teknis.
+- Penanganan kondisi loading, success, dan error.
+- Fitur refresh untuk memperbarui data.
+
+## Teknologi
+
+- Flutter
+- Dart
+- HTTP Package
+- Open-Meteo Geocoding API
+- Open-Meteo Forecast API
+
+## Menjalankan Aplikasi
+
+Pastikan Flutter sudah terpasang pada perangkat.
+
+```bash
+flutter pub get
+flutter run
+```
+
+## Catatan
+
+Rekomendasi yang diberikan oleh TaniAir merupakan indikator sederhana berdasarkan data model dan prakiraan cuaca dari Open-Meteo. Data kelembapan tanah bukan berasal dari sensor fisik yang dipasang langsung pada lahan, sehingga hasil aplikasi digunakan sebagai informasi pendukung dan tidak menggantikan pengamatan kondisi lahan secara langsung.
+
+## Sumber Data
+
+Data cuaca dan lokasi diperoleh dari:
+
+Open-Meteo  
+https://open-meteo.com/
